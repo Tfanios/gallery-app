@@ -35,8 +35,8 @@ export class ImagesService {
     const updatedImagesId = data.imagesId.filter((img:string) =>{
         return img != imageId;
     })
-    console.log(data)
-    if(updatedImagesId > 1){
+    console.log(updatedImagesId)
+    if(updatedImagesId.length > 0){
       localStorage.setItem('userAndFavoriteImages', JSON.stringify({id:data.id, imagesId:updatedImagesId}))
     }else{
       localStorage.setItem('userAndFavoriteImages', JSON.stringify({id:data.id, imagesId:[]}))
