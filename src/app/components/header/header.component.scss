@@ -1,0 +1,25 @@
+.container{
+    max-width: 144rem;
+}
+.mx-auto{
+    margin:0 auto;
+}
+.pt-10{
+    padding:2rem 0;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1.4rem;
+   
+}
+.flex a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size:1.8rem;
+}
+.active{
+    color:red;
+}

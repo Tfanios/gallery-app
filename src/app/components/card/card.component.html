@@ -1,0 +1,26 @@
+<tui-island>
+  <img [src]="imagePath()" />
+  <div [ngSwitch]="type">
+    <button
+      [disabled]="isLiked"
+      size="m"
+      tuiButton
+      (click)="likeEvent()"
+      *ngSwitchCase="'HOME'"
+    >
+      Like
+    </button>
+    <a *ngSwitchCase="'FAVOURITE'" [routerLink]="routerLinkVar">Details</a>
+    <button
+      [disabled]="isDisabled"
+      size="m"
+      tuiButton
+      (click)="deleteEvent()"
+      *ngSwitchCase="'DETAILS'"
+    >
+      Delete
+    </button>
+  </div>
+</tui-island>
+
+<ng-template #link></ng-template>

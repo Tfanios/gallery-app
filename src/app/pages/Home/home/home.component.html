@@ -1,0 +1,9 @@
+<div class="grid-container">
+  <app-card
+    *ngFor="let item of images; index as i"
+    [itemIndex]="i"
+    [type]="'HOME'"
+    [isLiked]="likedImages.includes(i.toString())"
+  ></app-card>
+  a
+</div>
