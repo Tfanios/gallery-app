@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
     if(localStorage?.getItem('userAndFavoriteImages')){
       const data =JSON.parse(localStorage.getItem('userAndFavoriteImages')!)
       this.likedImages = data.imagesId;
-      console.log(JSON.parse(localStorage.getItem('userAndFavoriteImages')!))
+      console.log(JSON.parse(localStorage.getItem('userAndFavoriteImages')!),'this')
     }
   }
 
